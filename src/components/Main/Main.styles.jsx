@@ -32,7 +32,7 @@ export const StyledMain = styled(Main)`
   }
 
   button {
-    margin-top: 10rem;
+    margin-top: 2.5em;
     padding: 0.2em 0.6em;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
