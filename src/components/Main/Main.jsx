@@ -1,11 +1,12 @@
-import { StyledCards } from "./Card.styles";
+import { StyledCards } from "./Cards/Card.styles";
 import { useState } from "react";
 
 const Main = ({ className }) => {
-  const [trendToggle, setTrendToggle] = useState(0);
+  const [trendToggle, setTrendToggle] = useState(false);
+  const [searchToggle, setSearchToggle] = useState(false);
   const [randomNumber, setRandomNumber] = useState(1);
-  const toggleHandle = () => {
-    setTrendToggle(trendToggle + 1);
+  const trendHandle = () => {
+    setTrendToggle(true);
     const newRandomNumber = Math.floor(Math.random() * 10) + 1;
     setRandomNumber(newRandomNumber);
   };
@@ -19,7 +20,7 @@ const Main = ({ className }) => {
             Movie Night, Reimagined: Say Goodbye to Decision Fatigue and Hello
             to Effortless Discoveries.
           </p>
-          <button onClick={() => toggleHandle()}>See What's Trending</button>
+          <button onClick={() => trendHandle()}>See What's Trending</button>
         </article>
         <article>
           <div>
@@ -27,7 +28,9 @@ const Main = ({ className }) => {
           </div>
         </article>
       </section>
-      <StyledCards toggle={trendToggle} page={randomNumber} />
+      {trendToggle ? (
+        <StyledCards toggle={trendToggle} page={randomNumber} />
+      ) : null}
     </main>
   );
 };

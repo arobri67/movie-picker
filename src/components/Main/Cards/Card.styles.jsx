@@ -60,15 +60,22 @@ export const StyledCards = styled(Cards)`
         > div {
           display: flex;
           justify-content: space-between;
+          align-items: center;
           margin-top: auto;
+
           p,
           a {
             font-size: 1.2rem;
+            margin-bottom: 0;
           }
           a {
             text-decoration: underline;
             color: var(--secondary-color);
             font-weight: 500;
+            &:hover {
+              font-size: 2rem;
+              transition: 500ms;
+            }
           }
           span {
             font-weight: 600;

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Main from "./Main";
-import Cards from "./Cards";
 
 export const StyledMain = styled(Main)`
   display: flex;
