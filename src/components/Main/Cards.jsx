@@ -8,8 +8,7 @@ const Cards = ({ className, toggle, page }) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZTBkNzY4YmRmNDc3MTYwYTlmNzBiYmIxNjdiYTAzMCIsInN1YiI6IjY1OGFhNTY3NWFiYTMyNjYwY2JhZmQyZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4Y6BAbE2ojdNwO6EbsbeUXeyW6BQ5fyJfZ4LorNWG6M",
+      Authorization: `Bearer ${process.env.REACT_APP_MOVIE_DB_TOKEN}`,
     },
   };
 
