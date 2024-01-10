@@ -7,7 +7,7 @@ his is a project that was made during the RockTheCode bootcamp (2024)
 
 - [About](#about)
 - [Features](#features)
-- [Technologies used](#technologies)
+- [Technologies](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
 
