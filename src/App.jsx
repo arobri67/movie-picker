@@ -12,8 +12,6 @@ function App() {
         <GlobalStyles />
         <StyledHeader />
         <StyledMain />
-      </StyledContainer>
-      <StyledContainer>
         <StyledFooter />
       </StyledContainer>
     </>

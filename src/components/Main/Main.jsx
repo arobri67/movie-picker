@@ -2,10 +2,10 @@ import { StyledCards } from "./Card.styles";
 import { useState } from "react";
 
 const Main = ({ className }) => {
-  const [trendToggle, setTrendToggle] = useState(false);
+  const [trendToggle, setTrendToggle] = useState(0);
   const [randomNumber, setRandomNumber] = useState(1);
   const toggleHandle = () => {
-    setTrendToggle(!trendToggle);
+    setTrendToggle(trendToggle + 1);
     const newRandomNumber = Math.floor(Math.random() * 10) + 1;
     setRandomNumber(newRandomNumber);
   };

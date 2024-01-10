@@ -2,15 +2,14 @@ import styled from "styled-components";
 import Header from "./Header";
 
 export const StyledHeader = styled(Header)`
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
   a {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 500;
     text-decoration: none;
   }
   a:visited {
@@ -23,10 +22,10 @@ export const StyledHeader = styled(Header)`
   }
 
   @media (max-width: 425px) {
-    nav > img {
+    > img {
       width: 75%;
     }
-    nav > a {
+    > a {
       display: none;
     }
   }

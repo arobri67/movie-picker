@@ -15,8 +15,6 @@ export const StyledCards = styled(Cards)`
     gap: 2.5em;
   }
   li {
-    /* width: 220px;
-    height: 330px; */
     width: 270px;
     height: 410px;
     perspective: 1000px;
@@ -43,7 +41,6 @@ export const StyledCards = styled(Cards)`
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 5px;
-        /* box-shadow: 7px 7px 0 var(--secondary-color); */
         > img {
           border-radius: 5px;
           width: 100%;
@@ -59,14 +56,6 @@ export const StyledCards = styled(Cards)`
         > p {
           font-size: 1.2rem;
         }
-        /* > p:last-child {
-          margin-top: auto;
-          margin-bottom: 0;
-
-          > span {
-            font-weight: 600;
-          }
-        } */
 
         > div {
           display: flex;
@@ -94,10 +83,7 @@ export const StyledCards = styled(Cards)`
     padding: 1em;
     box-shadow: 7px 7px 0 var(--secondary-color);
   }
-
-  /* li > div > div > img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 7px 7px 0 var(--secondary-color);
-  } */
+  @media (max-width: 425px) {
+    margin-top: 0;
+  }
 `;

@@ -15,6 +15,12 @@ export const StyledMain = styled(Main)`
   article {
     width: 47%;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &:nth-child(2) {
+      align-items: center;
+    }
   }
 
   h1 {
@@ -24,15 +30,16 @@ export const StyledMain = styled(Main)`
   p {
     font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 1em;
   }
 
   article > div > img {
-    width: 100%;
+    width: 500px;
     border-radius: 5px;
   }
 
   button {
-    margin-top: 2.5em;
+    margin-top: auto;
     padding: 0.2em 0.6em;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
