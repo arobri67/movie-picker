@@ -31,28 +31,6 @@ const Cards = ({ className, toggle, page }) => {
     }
   }, [page]);
 
-  // const fetchPosterData = async () => {
-  //   try {
-  //     const { data } = await axios(
-  //       `https://api.themoviedb.org/3/configuration`,
-  //       options
-  //     );
-  //     setDataPoster(data);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   fetchPosterData();
-  // }, []);
-
-  //MOCK HERE
-  // useEffect(() => {
-  //   if (toggle) {
-  //     setDataPoster(mockPosterData);
-  //     setData(mockData);
-  //   }
-  // }, [toggle]);
   return (
     <section className={className}>
       {data !== null ? (
