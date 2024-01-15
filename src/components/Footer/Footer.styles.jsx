@@ -9,14 +9,14 @@ export const StyledFooter = styled(Footer)`
     display: flex;
     flex-wrap: wrap;
     gap: 5em;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   li {
     font-size: 1.6rem;
     font-weight: 500;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 430px) {
     ul {
       gap: 2.5em;
       justify-content: center;

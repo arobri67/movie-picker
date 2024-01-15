@@ -5,6 +5,7 @@ export const StyledMain = styled(Main)`
   display: flex;
   flex-direction: column;
   margin-top: 5em;
+  flex-grow: 1;
 
   section {
     display: flex;
@@ -63,7 +64,7 @@ export const StyledMain = styled(Main)`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 430px) {
     article > div > img {
       display: none;
     }
