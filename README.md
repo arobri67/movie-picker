@@ -18,4 +18,4 @@ MoviePicker is a React-based web application that allows users to discover trend
 
 ## Demo
 
-Live Demo: [https://your-live-demo-url.com](https://your-live-demo-url.com)
+Live Demo: [https://regal-druid-e525ae.netlify.app/](https://regal-druid-e525ae.netlify.app/)
